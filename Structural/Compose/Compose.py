@@ -73,5 +73,6 @@ print(hardwareBox.getPrice())
 box = CompoundProduct([clothesBox, hardwareBox])
 print(box.getPrice())
 
+# verificando se é um leaf ou compose
 print(box.isCompose(), ram.isCompose())
 
