@@ -9,7 +9,7 @@ class ProductComponent:
     def isCompose(self):
         return False
 
-# Leaf (no child)
+# Leaf (não tem filho)
 class SingleProduct(ProductComponent):
 
     def __init__(self, name: str, price: float):
@@ -24,7 +24,7 @@ class SingleProduct(ProductComponent):
         return self.name
     
 
-# Compose (has child)
+# Compose (tem filho)
 class CompoundProduct(ProductComponent):
 
     def __init__(self, products: list[ProductComponent] = []):
